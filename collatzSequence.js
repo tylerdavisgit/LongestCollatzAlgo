@@ -45,7 +45,7 @@ const longestCollatz = () => {
   let longestLength = 1;
   // iterate over numbers 1-999999
   for (i = 1; i < 999999; i++) {
-    // set variavel length and call collatz helper function on each number
+    // set variable length to the value returned from calling collatz helper function on each number
     let length = collatz(i);
     // if the sequence for the current number is greater than longestLength, set longestLength to the length returned by collatz
     // also set the longestCollatz number to the value at i
